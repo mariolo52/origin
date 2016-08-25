@@ -1,0 +1,16 @@
+El archivo .gitignore es un simple archivo de texto que indica que tipo de archivos queremos que git ingnore, para esto hay que crearlo.
+
+$touch .gitignore
+$ git status
+#On branch master
+# Untracked files:
+#  (use "git add <file>..." to include in what will be committed)
+# .gitignore
+
+
+git nos dice que hay un nuevo archivo, en el vmaos a agregar lo siguiente para ignorar los archivos con extension .so .log
+
+$ cat git.ignore
+~*
+*.so
+*.log
